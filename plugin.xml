@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.phonegap.ymagyn" version="0.1">
+
+    <name>Ymagyn View</name>
+    <description>Ymagyn Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>phonegap, browser</keywords>
+
+    <js-module src="www/YmagynView.js" name="Ymagyn">
+        <clobbers target="YmagynView" />
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Ymagyn">
+                <param name="ios-package" value="YmagynView"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/YmagynView.h" />
+        <header-file src="src/ios/YmagynView.h" />
+    </platform>
+</plugin>
