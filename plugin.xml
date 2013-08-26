@@ -19,7 +19,7 @@
             </feature>
         </config-file>
 
-        <header-file src="src/ios/YmagynView.h" />
+        <header-file src="src/ios/YmagynView.m" />
         <header-file src="src/ios/YmagynView.h" />
     </platform>
 </plugin>
