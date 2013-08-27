@@ -1,4 +1,4 @@
-cordova.define("org.cordova.ymagyn", function(require, exports, module) {
+//cordova.define("org.cordova.ymagyn", function(require, exports, module) {
 	function YmagynView()
 	{
 	}
@@ -14,4 +14,4 @@ cordova.define("org.cordova.ymagyn", function(require, exports, module) {
 		}
 		window.plugins.ymagyn = new YmagynView();
 	});
-});
+//});
