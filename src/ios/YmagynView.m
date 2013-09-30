@@ -15,4 +15,9 @@
     [self.viewController dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (void)hideStatusBar:(CDVInvokedUrlCommand*)command
+{
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
+}
+
 @end

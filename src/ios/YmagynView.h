@@ -13,5 +13,6 @@
 @interface YmagynView : CDVPlugin
 
 - (void)closeView:(CDVInvokedUrlCommand*)command;
+- (void)hideStatusBar:(CDVInvokedUrlCommand*)command;
 
 @end

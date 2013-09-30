@@ -8,6 +8,10 @@
 		cordova.exec(null, null, "Ymagyn", "closeView", []);
 	}
 
+	YmagynView.prototype.hideStatusBar = function() {
+		cordova.exec(null, null, "Ymagyn", "hideStatusBar", []);
+	}
+
 	cordova.addConstructor(function() {
 		if(!window.plugins)	{
 			window.plugins = {};
