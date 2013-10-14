@@ -22,4 +22,14 @@
         <source-file src="src/ios/YmagynView.m" />
         <header-file src="src/ios/YmagynView.h" />
     </platform>
+	
+	 <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Ymagyn" >
+                <param name="android-package" value="org.apache.cordova.ymagynview.YmagynView"/>
+            </feature>
+        </config-file>
+        
+        <source-file src="src/android/org/apache/cordova/ymagynview/YmagynView.java" target-dir="src/org/apache/cordova/ymagynview" />
+     </platform>
 </plugin>
